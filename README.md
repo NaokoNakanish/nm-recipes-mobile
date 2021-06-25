@@ -42,3 +42,7 @@ Android Studio をダウンロードして、インストールする
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:\$ANDROID_HOME/platform-tools
 npm install -g nativescript
+
+ns doctor android
+
+<!-- Component @nativescript/android is not installed.でる。。。。 -->
