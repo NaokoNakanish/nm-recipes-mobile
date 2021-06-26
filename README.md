@@ -2,7 +2,7 @@
 
 <!-- うごかなくなったら、ctrl+C -->
 
-<!-- はじめはターミナルで -->
+はじめはターミナルで
 
 # install nativescript
 
@@ -14,7 +14,7 @@ https://nativescript-vue.org/en/docs/getting-started/installation/
 https://nativescript-vue.org/en/docs/getting-started/quick-start/
 `ns create <project-name> --vue # add --ts if you'd like to scaffold a project with TypeScript`
 
-<!-- ここからVSCode上で、作ったファイルを開いた状態で -->
+ここから VSCode 上で、作ったファイルを開いた状態で
 
 ```
 cd <project-name>
