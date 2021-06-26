@@ -34,13 +34,15 @@ brew tap AdoptOpenJDK/openjdk
 brew install --cask adoptopenjdk15
 ```
 
-<!-- エラーになる場合
+エラーになる場合
+
 ```
 Error: Download failed on Cask 'adoptopenjdk15' with message: No such file or directory @ dir_s_rmdir - /usr/local/var/homebrew/locks/0e366ed7d2f446b4147b7d3d5e56c8f73f5d80f8b52b5e9831e68029090ff5a5--OpenJDK15U-jdk_x64_mac_hotspot_15.0.2_7.pkg.incomplete.lock
 ```
-↓（代替案｝adoptopenjdkの公式サイトより、.pkgダウンロード、インストール
+
+↓（代替案｝adoptopenjdk の公式サイトより、.pkg ダウンロード、インストール
 https://adoptopenjdk.net/index.html?variant=openjdk15&jvmVariant=hotspot
-で、OpenJDK15をダウンロード、インストールする -->
+で、OpenJDK15 をダウンロード、インストールする
 
 https://developer.android.com/studio
 Android Studio をダウンロードして、インストールする
