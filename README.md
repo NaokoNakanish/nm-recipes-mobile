@@ -89,6 +89,8 @@ $ sudo chown -R $(whoami) $(brew --prefix)/*
 
 # macOS + iOS
 
+https://docs.nativescript.org/environment-setup.html#macos-ios
+
 ## X code 確認
 
 Open XCode › Preferences › Locations and make sure Command Line Tools is set
@@ -97,3 +99,31 @@ Open XCode › Preferences › Locations and make sure Command Line Tools is set
 
 brew install ruby@2.7
 brew link ruby@2.7
+
+## .zshrc 記述追加
+
+Finder で、.zshrc 開いて、`export PATH=/opt/homebrew/lib/ruby/gems/2.7.0/bin:$PATH`を追記、保存
+VScode 一旦開き直す
+
+## その他色々インストール
+
+```
+sudo gem install cocoapods
+sudo gem install xcodeproj
+npm i -D @nativescript/ios
+```
+
+## nativescript インストール
+
+```
+npm install -g nativescript
+```
+
+## できてるか確認
+
+ns doctor ios
+
+## だめな場合は、
+
+android のチェック３
+`tns platform add ios`してみる
