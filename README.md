@@ -1,3 +1,12 @@
+# run
+
+## run on Android
+
+Android Studio > Configure > AVD Manager > デバイス選んで「▶」
+`ns run android`
+
+## run on iOS
+
 # Set up for nativescript-vue
 
 <!-- TERMINALうごかなくなったら、ctrl+C -->
