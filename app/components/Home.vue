@@ -1,6 +1,7 @@
 <template>
     <Page>
         <ActionBar title="nm-recipes">
+            <Button text="Button" />
             <Label text="nm-recipes" fontSize="24" verticalAlignment="center" />
         </ActionBar>
 
