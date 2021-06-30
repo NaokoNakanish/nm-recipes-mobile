@@ -1,8 +1,9 @@
 <template>
     <Page>
         <ActionBar title="nm-recipes">
-            <Button text="Button" />
             <Label text="nm-recipes" fontSize="24" verticalAlignment="center" />
+            <ActionItem @tap="onTapDelete" ios.systemIcon="7" ios.position="right" text="Compose" />
+
         </ActionBar>
 
         <GridLayout>
