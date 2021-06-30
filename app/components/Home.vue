@@ -1,7 +1,7 @@
 <template>
     <Page>
-        <ActionBar>
-            <Label text="Home"/>
+        <ActionBar title="nm-recipes">
+            <Label text="nm-recipes" fontSize="24" verticalAlignment="center" />
         </ActionBar>
 
         <GridLayout>
