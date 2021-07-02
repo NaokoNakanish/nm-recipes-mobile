@@ -1,8 +1,8 @@
 <template>
     <Page>
-        <ActionBar title="nm-recipes">
+        <ActionBar class="fas" title="nm-recipes">
             <Label text="nm-recipes" fontSize="24" verticalAlignment="center" />
-            <ActionItem @tap="onTapDelete" ios.systemIcon="7" ios.position="right" text="Compose" />
+            <ActionItem @tap="onTapEdit" ios.systemIcon="7" ios.position="right" text="Compose" />
 
         </ActionBar>
 
@@ -39,9 +39,6 @@
     @import '@nativescript/theme/scss/variables/blue';
 
     // Custom styles
-    .fas {
-        @include colorize($color: accent);
-    }
 
     .info {
        font-size: 20;
