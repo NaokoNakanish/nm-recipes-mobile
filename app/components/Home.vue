@@ -6,14 +6,6 @@
         </ActionBar>
         
         <StackLayout backgroundColor=#c9c9c3>
-            <!-- category buttons -->
-            <ScrollView orientation="horizontal">
-                <GridLayout height=="30" columns="100,100,100,100,100,100,100,100" rows="*">
-                    <Button row="0" col="0" text="1" />
-                    <Button row="0" col="1" text="2" />
-                    <Button row="0" col="2" text="3" />
-                </GridLayout>
-            </ScrollView>
             <!-- Recipe List -->
             <ScrollView orientation="vertical">
                 <StackLayout backgroundColor=#c9c9c3>
