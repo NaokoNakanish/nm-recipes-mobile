@@ -5,17 +5,15 @@
             <ActionItem @tap="onTapEdit" ios.systemIcon="7" ios.position="right" text="Compose" />
         </ActionBar>
         
-        <StackLayout backgroundColor=#c9c9c3>
-            <!-- Recipe List -->
-            <ScrollView orientation="vertical">
-                <StackLayout backgroundColor=#c9c9c3>
-                    <GridLayout v-for="n in numOfRecipes" :key="n" height="260" columns="*" rows="40, 220">
-                        <Label text="pudding" row="0" col="0" backgroundColor="#ffffff" />
-                        <Image row="1" col="0" backgroundColor="#95b576" src="https://lh3.googleusercontent.com/QIBYEZbfFdfSVsWzYBgKh0ngvbsgAPlBxrfWwMDV3OtB4gxFue3gSDADwwpLV_PgajYr-SDLCxTdPQubhL1kz_G-wJBoLog3qhh65dyVB2V6dAKbFi6wUIM5tjf0M2GEEsCVsCQzojJOuZXU5oIJNTZwBToNVkGV7-LaVJyouRt_ihUJarIvA_W1MLggvDJ_3ZCgF7jFUrUjzIk514QT-omWxMdY3qPH60jZlv-TXKzdW-bxtU9pQNgh1Vkpz9sZ0ejtE-DbyIy-Y2MNob8efc9uENJYBv72JJYE5Y67HDlnaLeQjQlr65PcknyYNRW7gZ5tsN-SmMScMhIbemWBeSeCVGOPVnNFo899KIuRB4CPcoE1TAYdAg0ycvnzQJKwvjtrjLjMfjZylZySIiaZcQ5ANitN_nzFDT1KKVHlS-NkZ-N0B5a1e890QJuoiTd04_0DtdOebuzN1Dsp7oXU_fplRxpLL_QxgKElrQuTc6GPuYWmwwVhMjO5nPIoOpJiI5p3vd3iLTwcF1zPLeuJ4q3rkm-YaOn9TS_T6SzujReRoJsfVdARh_1YxlTznAMgLVVU8x-rkUtATZyx1gNn-PKEcCRWn9Jzzv90L3FMYW-Lt0XzNM4WsLxHeZE-QPYCAIp5XsiCgICrbGzb1yUzwuxNHqXlECn5qmiUYtvQnC1wFVB132uq9tG5tDJJzoAtMYleKxwKA5ARUz1nSqwxjb-ELQ=w2422-h1364-no?authuser=0" stretch="aspectFit" />
-                    </GridLayout>
-                </StackLayout>
-            </ScrollView>
-        </StackLayout>
+    <!-- Recipe List -->
+        <ScrollView orientation="vertical">
+            <StackLayout backgroundColor=#c9c9c3>
+                <GridLayout v-for="n in numOfRecipes" :key="n" height="260" columns="*" rows="40, 220">
+                    <Label text="pudding" row="0" col="0" backgroundColor="#ffffff" />
+                    <Image row="1" col="0" src="https://lh3.googleusercontent.com/Ec7omwVXGOIlQp35N0bbRTByVIE9nlNlaVl_X45AYl_iN6Y19qo3sW6j4NHN4G5atpM0IbqIkHynCSUmdTf-E9SxZVDgXYmNYTMjhEK0sJrNbfpv_ZKWGMvSx2oJSkcr25Sdol1AEvwgc2wrFi-TJWrtfrlRMpeZ0SeNmLu5NrCriQxcJYKz_L4VlghvgR07rvAx3um6YyimZRZ919iICeQKrw3HBzk0iyvyS_emZ1etWwbm2ymIAPiAg90-e_q7z96ID8AbXm_AzoYDyZq8y17rfK7pjztNk2d7vTEEOwl5tospdKr5xkUKKMSRP3KjhKllJj5uFlAxHYcDYiH7lIxcs19hjA8os2e61JrbcrR6e338ynr8Fp2wsyk-HdHyccdEM18oDhpNfMqBX0O7vRdb5cYQK9_6ndHCK9zGVBuMD4syylKAN1V7_5Q1tnX7OYKSKHbk-KN5AB-Kqhcrk9l1gQH5LkVvRIog8sy4p6UrLSe4Q8R7otmUrEDV_ayvleGxA-DbUxyE9yM8MnxKG_I9g4VELUCauj30mPWVSfcNQdvoQiOyGLPM2uKVtAf56nwbvQ2T5RUXsxXM4wmmCtcPGbjoZKZizX-44CGCFfnZavYlZDeRzV9O4VAH_jwJHfvF8Uk5CXuozOQLWmwmnEkJPerd5DE707F7n085Yxj6L-kuR7yMiP__T8jdXDMGLoeAimLuGyJAoEDqd0rhbzReQQ=w2190-h1232-no?authuser=0" stretch="aspectFill" />
+                </GridLayout>
+            </StackLayout>
+        </ScrollView>
     </Page>
 </template>
 
