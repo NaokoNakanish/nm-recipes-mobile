@@ -7,6 +7,10 @@ Android Studio > Configure > AVD Manager > デバイス選んで「▶」
 
 ## run on iOS
 
+## Multi Drawer Setup
+
+`npm i --save nativescript-vue-multi-drawer`
+
 # Set up for nativescript-vue
 
 <!-- TERMINALうごかなくなったら、ctrl+C -->
