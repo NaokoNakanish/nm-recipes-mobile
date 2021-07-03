@@ -40,6 +40,7 @@
     "@nativescript/core": "~8.0.0",
     "@nativescript/theme": "~3.0.1",
     "nativescript-vue": "~2.9.0",
+    "nativescript-vue-multi-drawer": "0.0.3",
     "nativescript-vue-navigator": "^1.2.0"
   },
   "devDependencies": {
