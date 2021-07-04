@@ -7,9 +7,9 @@
         
     <!-- Recipe List -->
         <ScrollView orientation="vertical">
-            <StackLayout backgroundColor=#c9c9c3>
+            <StackLayout backgroundColor=#ffffff>
                 <GridLayout v-for="n in numOfRecipes" :key="n" height="260" columns="*" rows="40, 220">
-                    <Label text="pudding" row="0" col="0" backgroundColor="#ffffff" />
+                    <Label text="pudding" row="0" col="0" backgroundColor="#ffffff" horizontalAlignment="center" />
                     <Image row="1" col="0" src="https://lh3.googleusercontent.com/pkjHuAsV-oHxh1yLhNkmRdwaVto3YOzbJdDaGqhkv28h2Jy7KwZRsLmbj9_mep_3fgPCD6kfridXEL3iaTzGmrQkcmJdmM_4CwCHckvHh4bxR7VNKI3l-fyBjVDPlNXU7srwOW-Dsnc=w2400" stretch="aspectFill" @tap="toDetail"/>
                 </GridLayout>
             </StackLayout>
