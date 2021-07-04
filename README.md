@@ -11,6 +11,10 @@ Android Studio > Configure > AVD Manager > デバイス選んで「▶」
 
 `npm i --save nativescript-vue-multi-drawer`
 
+## Get Google Photo URL
+
+https://www.labnol.org/embed/google/photos/
+
 # Set up for nativescript-vue
 
 <!-- TERMINALうごかなくなったら、ctrl+C -->
