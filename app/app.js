@@ -4,8 +4,8 @@ import App from '@/App.vue'
 import Navigator from 'nativescript-vue-navigator'
 
 // import MultiDrawer from 'nativescript-vue-multi-drawer'
-import {routes} from './routes'
-Vue.use(Navigator , { routes })
+import { routes } from './routes'
+Vue.use(Navigator, { routes })
 // Vue.use(MultiDrawer)
 import Home from './components/Home'
 import RecipeDetail from './components/RecipeDetail'
