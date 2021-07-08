@@ -17,7 +17,7 @@
             <!-- ingredients List -->
             <Label class="list-title" text="ingredients" color="#ffffff" backgroundColor="#D6C428" />
 
-            <Label v-for="ingredient in ingredients" class="list-text" textWrap="true" >
+            <Label v-for="ingredient in ingredients" :key="ingredient.index" class="list-text" textWrap="true" >
                 <Span :text="ingredient.ingredient" />
                 <Span text="..." />
                 <Span :text="ingredient.quantity" />
@@ -67,6 +67,6 @@
      vertical-align: left;
      font-size: 15;
      padding: 15;
-     background-color: pink;
- }
+     background-color: white;
+  }
 </style>
