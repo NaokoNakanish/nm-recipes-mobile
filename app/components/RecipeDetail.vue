@@ -15,19 +15,16 @@
             <Image height="220" src="https://lh3.googleusercontent.com/pkjHuAsV-oHxh1yLhNkmRdwaVto3YOzbJdDaGqhkv28h2Jy7KwZRsLmbj9_mep_3fgPCD6kfridXEL3iaTzGmrQkcmJdmM_4CwCHckvHh4bxR7VNKI3l-fyBjVDPlNXU7srwOW-Dsnc=w2400" stretch="aspectFill" />
             
             <!-- ingredients List -->
-            <Label class="list-title" text="ingredients" height="30" color="#ffffff" backgroundColor="#D6C428" />
-            <ListView for="ingredient in ingredients">
-                <v-template>
-                    <Label class="list-text" height="30" textWrap="true" backgroundColor="#ffffff">
-                        <Span :text="ingredient.ingredient" />
-                        <Span text="..." />
-                        <Span :text="ingredient.quantity" />
-                    </Label>
-                </v-template>
-            </ListView>
+            <Label class="list-title" text="ingredients" color="#ffffff" backgroundColor="#D6C428" />
+
+            <Label v-for="ingredient in ingredients" class="list-text" textWrap="true" >
+                <Span :text="ingredient.ingredient" />
+                <Span text="..." />
+                <Span :text="ingredient.quantity" />
+            </Label>
             
             <!-- Process List -->
-            <Label class="list-title" text="ingredients" height="30" color="#ffffff" backgroundColor="#D6C428" />
+            <Label class="list-title" text="ingredients" height="30" backgroundColor="#D6C428" />
             <ListView for="ingredient in ingredients">
                 <v-template>
                     <Label class="list-text" height="30" textWrap="true" backgroundColor="#ffffff">
@@ -70,5 +67,6 @@
      vertical-align: left;
      font-size: 15;
      padding: 15;
+     background-color: pink;
  }
 </style>
