@@ -5,9 +5,9 @@ import RecipeDetail from './components/RecipeDetail'
 
 export const routes = {
   '/home': {
-    component: Home,
+    component: Home
   },
   '/recipedetail': {
-    component: RecipeDetail,
-  },
+    component: RecipeDetail
+  }
 }
