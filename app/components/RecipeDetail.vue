@@ -6,7 +6,7 @@
             <ActionItem ios.systemIcon="7" ios.position="right" text="Compose" />
         </ActionBar>
 
-        <StackLayout backgroundColor=#c9c9c3>
+        <StackLayout width="100%" backgroundColor=#c9c9c3>
             <!-- category and update info -->
             <GridLayout height="40" columns="*, 3*" rows="*" backgroundColor="#D6C428">
                 <Label text="Category" row="0" col="0" color="#ffffff" backgroundColor="#D6C428" horizontalAlignment="center"/>
@@ -15,11 +15,10 @@
             <Image height="220" src="https://lh3.googleusercontent.com/pkjHuAsV-oHxh1yLhNkmRdwaVto3YOzbJdDaGqhkv28h2Jy7KwZRsLmbj9_mep_3fgPCD6kfridXEL3iaTzGmrQkcmJdmM_4CwCHckvHh4bxR7VNKI3l-fyBjVDPlNXU7srwOW-Dsnc=w2400" stretch="aspectFill" />
             
             <!-- ingredients List -->
-            <Label text="ingredients" height="30" color="#ffffff" backgroundColor="#D6C428" />
+            <Label class="list-title" text="ingredients" height="30" color="#ffffff" backgroundColor="#D6C428" />
             <ListView for="ingredient in ingredients">
                 <v-template>
-                    <Label textWrap="true" backgroundColor="#ffffff">
-                        <Span text="・" />
+                    <Label class="list-text" height="30" textWrap="true" backgroundColor="#ffffff">
                         <Span :text="ingredient.ingredient" />
                         <Span text="..." />
                         <Span :text="ingredient.quantity" />
@@ -28,11 +27,10 @@
             </ListView>
             
             <!-- Process List -->
-            <Label text="ingredients" height="30" color="#ffffff" backgroundColor="#D6C428" />
+            <Label class="list-title" text="ingredients" height="30" color="#ffffff" backgroundColor="#D6C428" />
             <ListView for="ingredient in ingredients">
                 <v-template>
-                    <Label textWrap="true" backgroundColor="#ffffff">
-                        <Span text="・" />
+                    <Label class="list-text" height="30" textWrap="true" backgroundColor="#ffffff">
                         <Span :text="ingredient.ingredient" />
                         <Span text="..." />
                         <Span :text="ingredient.quantity" />
@@ -61,3 +59,16 @@
     },
   };
 </script>
+
+<style scoped>
+ .list-title {
+     vertical-align: left;
+     font-size: 20;
+     padding: 15;
+ }
+  .list-text {
+     vertical-align: left;
+     font-size: 15;
+     padding: 15;
+ }
+</style>
