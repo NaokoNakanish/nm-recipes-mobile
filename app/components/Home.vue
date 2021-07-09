@@ -7,7 +7,7 @@
 
     <!-- Recipe List -->
     <ScrollView orientation="vertical">
-      <StackLayout backgroundColor="#ffffff">
+             <StackLayout backgroundColor="#ffffff">
         <GridLayout
           v-for="n in numOfRecipes"
           :key="n"
@@ -15,6 +15,9 @@
           columns="*"
           rows="40, 220"
         >
+
+
+        
           <Label
             text="pudding"
             row="0"
@@ -22,6 +25,7 @@
             backgroundColor="#ffffff"
             horizontalAlignment="center"
           />
+
           <Image
             row="1"
             col="0"
