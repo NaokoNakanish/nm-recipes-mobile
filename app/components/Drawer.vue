@@ -2,11 +2,11 @@
 
 <template>
   <page>
-    <!-- category buttons -->
-    <StackLayout backgroundColor="#ffffff">
-      <Label text="Category" height="100" />
-      <Button text="Japanese" height="70" />
-      <Button text="Chinese" height="70" />
+          <!-- category buttons -->
+          <StackLayout backgroundColor="#ffffff">
+            <Label text="Category" height="100" />
+            <Button text="Japanese" height="70" />
+            <Button text="Chinese" height="70" />
     </StackLayout>
   </page>
 </template>
