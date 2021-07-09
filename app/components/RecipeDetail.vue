@@ -38,10 +38,7 @@
       />
 
       <!-- ingredients List -->
-      <Label
-        class="list-title"
-        text="ingredients"
-      />
+      <Label class="list-title" text="ingredients" />
 
       <Label
         v-for="ingredient in ingredients"
@@ -55,17 +52,18 @@
       </Label>
 
       <!-- Process List -->
-      <Label
-        class="list-title"
-        text="process"
-      />
+      <Label class="list-title" text="process" />
 
-      <Label v-for="process in processes" :key="process.index" class="list-text" textWrap="true" >
+      <Label
+        v-for="process in processes"
+        :key="process.index"
+        class="list-text"
+        textWrap="true"
+      >
         <Span :text="process.order" />
         <Span text=") " />
         <Span :text="process.do" />
       </Label>
-
     </StackLayout>
   </page>
 </template>
@@ -111,8 +109,8 @@ export default {
   padding-right: 15;
   padding-top: 7;
   padding-bottom: 7;
-  background-color: "#D6C428";
-  color: "#ffffff";
+  background-color: '#D6C428';
+  color: '#ffffff';
 }
 .list-text {
   vertical-align: left;
