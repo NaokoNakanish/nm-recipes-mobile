@@ -41,8 +41,6 @@
       <Label
         class="list-title"
         text="ingredients"
-        color="#ffffff"
-        backgroundColor="#D6C428"
       />
 
       <Label
@@ -59,24 +57,15 @@
       <!-- Process List -->
       <Label
         class="list-title"
-        text="ingredients"
-        height="30"
-        backgroundColor="#D6C428"
+        text="process"
       />
-      <ListView for="ingredient in ingredients">
-        <v-template>
-          <Label
-            class="list-text"
-            height="30"
-            textWrap="true"
-            backgroundColor="#ffffff"
-          >
-            <Span :text="ingredient.ingredient" />
-            <Span text="..." />
-            <Span :text="ingredient.quantity" />
-          </Label>
-        </v-template>
-      </ListView>
+
+      <Label v-for="process in processes" :key="process.index" class="list-text" textWrap="true" >
+        <Span :text="process.order" />
+        <Span text=") " />
+        <Span :text="process.do" />
+      </Label>
+
     </StackLayout>
   </page>
 </template>
@@ -94,6 +83,20 @@ export default {
           ingredient: 'にんじん',
           quantity: '2本'
         }
+      ],
+      processes: [
+        {
+          order: 1,
+          do: 'スパイスをジャーってやって、収まったら野菜とか肉とか炒める'
+        },
+        {
+          order: 2,
+          do: 'トマト缶とちょっと水を入れて煮込む'
+        },
+        {
+          order: 3,
+          do: 'ガラムマサラや塩などで味を調節する'
+        }
       ]
     }
   }
@@ -104,12 +107,20 @@ export default {
 .list-title {
   vertical-align: left;
   font-size: 20;
-  padding: 15;
+  padding-left: 15;
+  padding-right: 15;
+  padding-top: 7;
+  padding-bottom: 7;
+  background-color: "#D6C428";
+  color: "#ffffff";
 }
 .list-text {
   vertical-align: left;
   font-size: 15;
-  padding: 15;
+  padding-left: 15;
+  padding-right: 15;
+  padding-top: 7;
+  padding-bottom: 7;
   background-color: white;
 }
 </style>
