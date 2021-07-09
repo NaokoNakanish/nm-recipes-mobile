@@ -70,34 +70,34 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       ingredients: [
         {
           ingredient: 'にく',
-          quantity: '3枚'
+          quantity: '3枚',
         },
         {
           ingredient: 'にんじん',
-          quantity: '2本'
-        }
+          quantity: '2本',
+        },
       ],
       processes: [
         {
           order: 1,
-          do: 'スパイスをジャーってやって、収まったら野菜とか肉とか炒める'
+          do: 'スパイスをジャーってやって、収まったら野菜とか肉とか炒める',
         },
         {
           order: 2,
-          do: 'トマト缶とちょっと水を入れて煮込む'
+          do: 'トマト缶とちょっと水を入れて煮込む',
         },
         {
           order: 3,
-          do: 'ガラムマサラや塩などで味を調節する'
-        }
-      ]
+          do: 'ガラムマサラや塩などで味を調節する',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 
