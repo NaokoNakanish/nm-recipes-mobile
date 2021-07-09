@@ -7,7 +7,7 @@
 
     <!-- Recipe List -->
     <ScrollView orientation="vertical">
-             <StackLayout backgroundColor="#ffffff">
+      <StackLayout backgroundColor="#ffffff">
         <GridLayout
           v-for="n in numOfRecipes"
           :key="n"
@@ -15,9 +15,6 @@
           columns="*"
           rows="40, 220"
         >
-
-
-        
           <Label
             text="pudding"
             row="0"
@@ -41,21 +38,21 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-      numOfRecipes: 3
+      numOfRecipes: 3,
     }
   },
   computed: {
-    message () {
+    message() {
       return 'category tab will come here'
-    }
+    },
   },
   methods: {
-    toDetail () {
+    toDetail() {
       this.$navigator.navigate('/recipedetail')
-    }
-  }
+    },
+  },
 }
 </script>
 

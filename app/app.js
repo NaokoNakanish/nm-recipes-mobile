@@ -12,5 +12,5 @@ Vue.use(Navigator, { routes })
 // import RecipeDetail from './components/RecipeDetail' // default
 
 new Vue({
-  render: (h) => h(App) // default [render: 'h => h('frame', App),'] changed for Navigator
+  render: (h) => h(App), // default [render: 'h => h('frame', App),'] changed for Navigator
 }).$start()

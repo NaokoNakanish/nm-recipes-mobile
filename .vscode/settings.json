@@ -13,10 +13,9 @@
       "autoFix": true
     }
   ],
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.workingDirectories": ["./client", "./server"],
-  "vetur.format.options.tabSize": 4
+  "eslint.workingDirectories": ["./client", "./server"]
 }
