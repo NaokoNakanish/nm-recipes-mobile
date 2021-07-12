@@ -2,7 +2,12 @@
   <Page>
     <ActionBar class="fas" title="nm-recipes">
       <Label text="nm-recipes" fontSize="24" verticalAlignment="center" />
-      <ActionItem ios.systemIcon="7" ios.position="right" text="Compose" />
+      <ActionItem
+        ios.systemIcon="7"
+        ios.position="right"
+        text="Compose"
+        @tap="toEdit"
+      />
     </ActionBar>
 
     <!-- Recipe List -->
@@ -51,6 +56,9 @@ export default {
   methods: {
     toDetail() {
       this.$navigator.navigate('/recipedetail')
+    },
+    toEdit() {
+      this.$navigator.navigate('/recipeedit')
     },
   },
 }

@@ -2,6 +2,7 @@
 
 import Home from './components/Home'
 import RecipeDetail from './components/RecipeDetail'
+import RecipeEdit from './components/RecipeEdit'
 
 export const routes = {
   '/home': {
@@ -9,5 +10,8 @@ export const routes = {
   },
   '/recipedetail': {
     component: RecipeDetail,
+  },
+  '/recipeedit': {
+    component: RecipeEdit,
   },
 }
