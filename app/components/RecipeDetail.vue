@@ -103,14 +103,15 @@ export default {
 
 <style scoped>
 .list-title {
+  height: 30;
   vertical-align: left;
   font-size: 20;
   padding-left: 15;
   padding-right: 15;
   padding-top: 7;
   padding-bottom: 7;
-  background-color: '#D6C428';
-  color: '#ffffff';
+  background-color: #d6c428;
+  color: #ffffff;
 }
 .list-text {
   vertical-align: left;
