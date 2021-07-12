@@ -5,8 +5,9 @@ module.exports = {
   },
   extends: [
     'plugin:vue/essential',
-    'plugin:eslint/recommended',
-    '@vue/prettier',
+    'plugin:prettier/recommended',
+    // '@vue/prettier',
+    // '@vue/prettier' was specified in Vue Mastery, but seems not required.commenting this out enabled namisen check.
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
